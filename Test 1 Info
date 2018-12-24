@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="utf 8">
+    <title>Guru99</title>     
+</head>  
+<body ng-app="app">
+<h1 ng-controller="HelloWorldCtrl">{{message}}</h1>
+<script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+<script>  
+    angular.module("app", []).controller("HelloWorldCtrl", function($scope) {  
+    $scope.message="Hello World" 
+    } )
+</script> 
+
+</body>  
+</html>
+
+
+ng-app here considers the application as angularJS application.
+Controller holds the business logic.
+Message is a member variable created here.
+Script tag here is used to write the angular js code within it.
+Controller here is 'HelloWorldCtrl' //angular.module("app", []).controller("HelloWorldCtrl", function($scope)  
+
+we are creating a controller here named helloworldctrl which holds the business logic..
+Inside the controller we create a function which gets executed when the controller is called.
+$scope object is used to manage the data between controller and view.
+
+We have created a member named 'message' which has the value set to Hello world..This member is attached to the scope variable $scope.
