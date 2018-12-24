@@ -3,3 +3,27 @@ Once the folder gets created.. Navigate to the folder cd <foldername>
 now type ng serve and the app gets up and running..
 now on the web browser type
 localhost:4200
+
+
+Flow of execution
+-----------------------
+
+Modules: Collection of module where every module will represent a feature of the application(Lines of code).
+Every angular app has a root module(called as APP module)
+
+Module is made of compnents and services.
+
+Components control the view(every angular app has a root component called as APP component..Each component has a html template )
+
+Services are classes which contains the business logic of the application.
+
+Important files
+----------
+1. Package.json - > contains dependencies for the application to run.
+2.Node_modules folder ->contains all the packages installed.
+3. Source(src) -> Main.ts file is the entry point 
+app.module.ts is the root module
+app.component.ts is the root component.
+
+
+when ng serve is executed..the app.module gets bootstrapped inside which the app.component gets kick started.
