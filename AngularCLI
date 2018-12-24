@@ -1,1 +1,5 @@
 ng new <name> to create a new project with a name to it which would create a folder for the desired project.
+Once the folder gets created.. Navigate to the folder cd <foldername>
+now type ng serve and the app gets up and running..
+now on the web browser type
+localhost:4200
