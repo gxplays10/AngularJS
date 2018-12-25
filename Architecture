@@ -1,0 +1,33 @@
+Component contains
+
+1.Template  Html view
+2.Class  typescript code with data and methods
+3.Metadata information and decorator(a function provides info about class attached to it)
+
+
+Component 
+
+//this is the component decorator it is a function that attaches to the class right below it here attached to appcomponent.
+
+//it contains the metadata...an html code gets rendered with this selector.
+// in html <app-root></app-root>
+@component({
+selector: 'app-root'
+templateUrl: '....'
+styleurls:['./....']
+})
+
+export class appcomponent{
+title ='code';
+}
+
+
+
+Component name is appcomponent with a property title with a value code.
+
+To create a new component
+----------------------
+
+ng g c <name of the component>
+
+when a new component is created it gets added to the app.module.ts and the test component folder is generated with the css html and ts files 
